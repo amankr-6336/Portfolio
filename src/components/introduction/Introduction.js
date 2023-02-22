@@ -35,7 +35,7 @@ function Introduction() {
                     <TypeWriter/>
                 </div>
                 <div className="resume">
-                  <button className='resume'><a href="./1.pdf" download >Resume</a></button>
+                  <button ><a href="./1.pdf" download >Resume</a></button>
                 </div>
             </div>
             <div className="right-mini">

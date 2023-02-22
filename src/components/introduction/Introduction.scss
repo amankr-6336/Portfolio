@@ -49,7 +49,7 @@
             }
             .resume{
                 padding: 3px 9px;
-                font-size: 1.1rem;
+                font-size: 1rem;
                 font-weight: bold;
                 color: rgb(10, 38, 71);
                 background-color:rgb(255, 110, 49) ;
@@ -60,6 +60,12 @@
                     color: rgb(10, 38, 71);
                     
                 }
+                button{
+                    font-size: larger;
+                    background-color:rgb(255, 110, 49) ;
+                    border: none;
+                    font-weight: bolder;
+                }
                 
                 
             }
@@ -68,6 +74,13 @@
                 background-color: white;
                 color: rgb(255, 110, 49);
                 cursor: pointer;
+                button{
+                    background-color: white;
+                    color: rgb(255, 110, 49);
+                }
+                a{
+                    color: rgb(255, 110, 49);
+                }
             }
         }
 
@@ -254,8 +267,20 @@
 
 @media screen and (max-width:600px) {
     .container{
+     
         flex-direction: column-reverse;
         max-width: 100%;
+        .left{
+            .profession{
+                margin: 50px 0px;
+            }
+
+            .resume{
+                margin-top: 50px;
+                margin-bottom: 30px;
+                padding: 10px;
+            }
+        }
     }
 }
 
@@ -265,9 +290,14 @@
         max-width: 100%;
 
         .left{
+            .profession{
+                margin: 20px 0px;
+            }
+        
             .resume{
                 margin-bottom: 10px;
             }
         }
+        }
     }
-}
+
