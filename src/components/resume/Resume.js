@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Resume.scss";
 import { FaGraduationCap } from "react-icons/fa";
 import { BsLaptop } from "react-icons/bs";
