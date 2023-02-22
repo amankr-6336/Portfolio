@@ -1,0 +1,139 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.about{
+    // border: 2px solid red;
+    font-family: 'Ubuntu', sans-serif;
+
+    .top{
+        margin-bottom: 30px;
+        #heading{
+            color: black;
+        }
+        #subheading{
+            color: black;
+            font-size: 1.4rem;
+            padding: 10px;
+        }
+
+        .line{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 10px;
+            .blueline{
+                width: 250px;
+                border-top:5px solid black ;
+                border-radius: 3px;
+            }
+            .orangeline{
+                position: absolute;
+                width: 150px;
+                border-top:8px solid orange;
+                border-radius: 3px;
+            }
+        }
+    }
+
+    .bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+       
+        .innerbox{
+            width: 1000px;
+            height: 470px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            .leftbox{
+                flex: 1;
+              
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                height: inherit;
+            }
+            .rightbox{
+                flex: 1;
+               
+                height:inherit;
+                .detail{
+                    color: black;
+                    font-size: 1rem;
+                    text-align: justify;
+                    padding: 30px;
+                }
+
+                .point{
+                    color: black;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px;
+                    span{
+                       display: flex;
+                    //    justify-content: center;
+                       align-items: center;
+                       padding: 10px;
+
+                        .listdot{
+                            font-size: 1rem;
+                            color: orange;
+                            
+                        }
+                        .p{
+                            font-size: 1.1rem;
+                            display: inline-block;
+                            padding-left: 10px;
+                        }
+                    }
+                }
+              .buttons{
+               
+                #resume{
+                    padding: 8px 9px;
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    color: white;
+                    background-color:rgb(255, 110, 49) ;
+                    border-radius: 5px;
+                    border: none;
+                    margin-right: 20px;
+                    
+                }
+
+                #resume:hover{
+                    background-color: white;
+                    color:rgb(255, 110, 49);
+                    cursor: pointer;
+
+                }
+
+                #hire{
+                    padding: 3px 9px;
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    color: rgb(10, 38, 71);
+                    // background-color:rgb(255, 110, 49) ;
+                    border-radius: 5px;
+                    border: 5px solid rgb(10, 38, 71);
+                    margin-left: 20px;
+                    
+                }
+
+                #hire:hover{
+                    color: white;
+                    background-color:rgb(10, 38, 71);
+                    border: 5px solid rgb(255, 110, 49);
+                    cursor: pointer;
+                }
+            }
+        }
+        }
+    }
+}

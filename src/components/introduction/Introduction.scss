@@ -1,0 +1,256 @@
+
+.introduction{
+    
+    margin-bottom: 100px;
+
+    .container{
+        min-height: 400px;
+        display:  flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(10, 38, 71);
+        border-radius:0% 0% 35% 35%;
+       
+
+        .left{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+           
+          
+            .socialmedia{
+             
+                margin: 20px;
+                a{
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    color: white;
+                    
+                }
+                a:hover{
+                    color: rgb(255, 110, 49);
+                }
+            }
+            .name{
+                font-size: 1.1rem;
+                margin-bottom: 10px;
+                h2{
+                    display: inline-block;
+                    color: white;
+                }
+                #name{
+                    color: rgb(255, 110, 49);
+                }
+            }
+            .profession{
+                margin: 15px;
+            }
+            .resume{
+                padding: 3px 9px;
+                font-size: 1.1rem;
+                font-weight: bold;
+                color: rgb(10, 38, 71);
+                background-color:rgb(255, 110, 49) ;
+                border-radius: 5px;
+                border: none;
+                a{
+                    text-decoration: none;
+                    
+                }
+                
+                
+            }
+
+            .resume:hover{
+                background-color: white;
+                color: rgb(255, 110, 49);
+                cursor: pointer;
+            }
+        }
+
+        .right-mini{
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+          
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .right{
+            position: relative;
+           
+      
+
+
+             .picpart{
+                position: absolute;
+                z-index: 5;
+                
+                left: 50px;
+                top: 48px;
+
+               .orange-part{
+                width: 250px;
+                height: 250px;
+                background-color: rgb(255, 110, 49);
+                border-radius: 50%;
+               } 
+               .blue-part{
+                width: 250px;
+                height: 250px;
+                background-color: rgb(10, 38, 71);
+                border-radius: 50%;
+                position: absolute;
+                top: -10px;
+               }
+               
+
+              .blue{
+                width: 220px;
+                height: 220px;
+               
+                border-radius: 50%;
+                display:  flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                position: absolute;
+                top: 8px;
+                left: 15px;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                   
+                    object-fit:cover;
+                    object-position:center;
+                   
+                }
+              }
+              
+             
+         
+
+               
+            }
+
+           .mainrotate{
+            z-index: -1;
+           
+          
+            .rotate{
+                position: relative;
+              
+               
+                
+
+                .orangerotate{
+                    width: 350px;
+                    height: 350px;
+                    background-color: rgb(255, 110, 49);
+                    border-radius: 50%;
+                    animation: rotate 14s linear infinite ;
+                   
+                  
+
+                    span{
+                        width: 60px;
+                        height: 60px;
+                    
+                        
+                        img{
+                            background-color: rgb(255, 110, 49);
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            padding: 5px;
+                        }
+                       
+                    }
+                    #one{
+                        position: absolute;
+                        left: 140px;
+                        top: -18px;
+                       
+                    }
+                    #two{
+                        position: absolute;
+                        left: -18px;
+                        top: 140px;
+                    }
+                    
+                    #three{
+                        position: absolute;
+                        bottom: -18px;
+                        left: 140px;
+                    }
+    
+                    #four{
+                        position: absolute;
+                        top: 140px;
+                        left: 310px;
+                    }
+    
+                
+                }
+                .blue-rotate{
+                    width: 300px;
+                    height: 300px;
+                    background-color: rgb(10, 38, 71);
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 25px;
+                    left: 25px;
+                    
+                   
+                }
+
+               
+            
+              }
+
+              @keyframes rotate {
+                0%{
+
+                }
+                25%{
+                    transform: rotate(90deg);
+                }
+                50%{
+                    transform: rotate(180deg);  
+                }
+                75%{
+                    transform: rotate(270deg);
+                    
+                }
+                100%{
+                    transform: rotate(360deg);
+                    
+                }
+
+               
+               
+              }
+
+         
+               
+          
+
+            
+         
+        }
+    }
+}
+}
+
+
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        flex-direction: column-reverse;
+    }
+}

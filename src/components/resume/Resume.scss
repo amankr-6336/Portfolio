@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.resumebox{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    .topi{
+        margin-bottom: 30px;
+        #heading{
+            color: black;
+        }
+
+        .line{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 10px;
+            .blueline{
+                width: 250px;
+                border-top:5px solid black ;
+                border-radius: 3px;
+            }
+            .orangeline{
+                position: absolute;
+                width: 150px;
+                border-top:8px solid orange;
+                border-radius: 3px;
+            }
+        }
+    }
+
+
+    .innerbox{
+         min-width: 1000px;
+         height: 620px;
+        //  border: 2px solid red;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         .leftbox{
+            height: 100%;
+            // border: 2px solid black;
+            flex: 1.3;
+            display: flex;
+            justify-content:space-evenly;
+        
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(10, 38, 71);
+
+
+            .division{
+            //   border: 2px solid red;
+              width: 100%;
+              height: fit-content;
+              cursor: pointer;
+
+              .top{
+                width: 100%;
+                
+                height: 15px;
+                // background-color: rgb(246, 248, 249);
+                background-color: rgb(10, 38, 71);
+                // border-radius: 0px 0px 10px 0px;
+                .toggle{
+                    width: 100%;
+                    height: 15px;
+                    background-color: rgb(10, 38, 71);
+                    border-radius: 0px 0px 20px 0px;
+                }
+              }
+
+              .middle{
+                width: 100%;
+                height: 65px;
+                padding: 0px 15px;
+                // background-color: rgb(247, 248, 250);
+                background-color: rgb(10, 38, 71);
+                border-radius: 50px 0px 0px 50px;
+                 display: flex;
+                 justify-content:flex-start;
+                 align-items: center;
+                 font-size: 1.3rem;
+                 gap: 15px;
+                 color:rgb(255, 110, 49)
+              }
+
+              .bottom{
+                width: 100%;
+                height: 15px;
+                // background-color: white;
+                background-color: rgb(10, 38, 71);
+                // border-radius: 0px 10px 0px 0px;
+                .btoggle{
+                    width: 100%;
+                    height: 15px;
+                    background-color:rgb(10, 38, 71) ;
+                    border-radius: 0px 10px 0px 0px;
+                }
+              }
+            }
+
+            .division:hover{
+                // border: 2px solid red;
+                width: 100%;
+                height: fit-content;
+                cursor: pointer;
+  
+                .top{
+                  width: 100%;
+                  height: 15px;
+                  background-color: rgb(246, 248, 249);
+                  // border-radius: 0px 0px 10px 0px;
+                  .toggle{
+                      width: 100%;
+                      height: 15px;
+                      background-color: rgb(10, 38, 71);
+                      border-radius: 0px 0px 20px 0px;
+                  }
+                }
+  
+                .middle{
+                  width: 100%;
+                  height: 65px;
+                  padding: 0px 15px;
+                  background-color: rgb(247, 248, 250);
+                  border-radius: 50px 0px 0px 50px;
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  font-size: 1.3rem;
+                  gap: 15px;
+                  color:rgb(255, 110, 49)
+                }
+  
+                .bottom{
+                  width: 100%;
+                  height: 15px;
+                  background-color: white;
+                  // border-radius: 0px 10px 0px 0px;
+                  .btoggle{
+                      width: 100%;
+                      height: 15px;
+                      background-color:rgb(10, 38, 71) ;
+                      border-radius: 0px 20px 0px 0px;
+                  }
+                }
+              }
+         }
+
+         .rightbox{
+            height: 100%;
+            // border: 2px solid green;
+            flex: 3;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+
+            .rightinbox{
+                width: 90%;
+                max-height: 80%;
+                color: black;
+                // border: 2px solid black;
+                overflow-y: hidden;
+
+                
+                
+                
+                .edu{
+                    display: flex;
+                    justify-content:space-between;
+                    align-items:center;
+                    // border: 2px solid red;
+                     margin: 50px 5px;
+
+                    
+
+                    .leftside{
+                        
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 20px;
+                        #circle{
+                            font-size: 1.2rem;
+                            color:rgb(255, 110, 49)
+                        }
+                        h4{
+                           
+                            font-size: 1.2rem;
+                            color:rgb(255, 110, 49)
+                            
+                        }
+                       
+                        
+                    }
+
+                    .rightside{
+                        h4{
+                            padding: 6px 14px;
+                            font-size: 1rem;
+                            color: white;
+                            background-color:rgb(255, 110, 49) ;
+                            border-radius: 20px;
+                        }
+                    }
+                }
+                
+                #difference1{
+                    height: 200px;
+                    
+                    
+                }
+
+                .skill{
+                     margin: 24px 5px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items:flex-start;
+                    flex-direction: column;
+                    // border: 2px solid red;
+
+                    .top-skill{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        #circle{
+                            font-size: 1.2rem;
+                            color:rgb(255, 110, 49)
+                        }
+                        h4{
+                            display: inline-block;
+                            font-size: 1.2rem;
+                            color:rgb(255, 110, 49)
+                        }
+
+                    }
+                    .bar{
+                        margin: 10px 0px;
+                        width: 80%;
+                        height: 20px;
+                        border-radius: 20px;
+                        background-color:rgb(10, 38, 71);
+                        .range{
+                            height: 100%;
+                            background-color:rgb(255, 110, 49);
+                            border-radius: 20px;
+                        }
+                        #react{
+                            width: 75%;
+                        }
+                        #js{
+                            width: 80%;
+                        }
+                        #css{
+                            width: 85%;
+                        }
+                        #Node{
+                            width: 65%;
+                        }
+                        #c{
+                            width: 82%;
+                        }
+
+                    }
+                }
+
+                #difference2{
+                    height: 100px;
+
+                }
+
+                #difference3{
+                    height: 100px;
+                    // border: 2px solid red;
+                }
+
+                #difference4{
+                    height: 350px;
+                    // border: 2px solid red;
+                }
+
+
+            }
+
+            .rightinbox::-webkit-scrollbar{
+                display: none;
+             }
+           
+         }
+    }
+}

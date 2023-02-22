@@ -1,0 +1,35 @@
+.footer{
+    margin-top: 100px;
+    height: 150px;
+    border-radius: 50% 50% 0% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(10, 38, 71);
+
+    .footerinner{
+        width: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        .footername{
+            h4{
+                font-size: 1.3rem;
+                color: rgb(255, 110, 49);
+
+            }
+        }
+
+        .footericon{
+           a{
+            text-decoration: none;
+            color: white;
+           }
+           a:hover{
+            color: rgb(255, 110, 49) ;
+           }
+        }
+    }
+}
