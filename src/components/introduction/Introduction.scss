@@ -57,6 +57,7 @@
                 border: none;
                 a{
                     text-decoration: none;
+                    color: rgb(10, 38, 71);
                     
                 }
                 
@@ -151,6 +152,8 @@
                     width: 350px;
                     height: 350px;
                     background-color: rgb(255, 110, 49);
+                    
+                    
                     border-radius: 50%;
                     animation: rotate 14s linear infinite ;
                    
@@ -252,5 +255,19 @@
 @media screen and (max-width:600px) {
     .container{
         flex-direction: column-reverse;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    .container{
+        flex-direction: column-reverse;
+        max-width: 100%;
+
+        .left{
+            .resume{
+                margin-bottom: 10px;
+            }
+        }
     }
 }

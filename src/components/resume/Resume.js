@@ -49,7 +49,7 @@ function Resume() {
           <div className="orangeline"></div>
         </div>
       </div>
-      <div className="innerbox">
+      <div className="innnerbox">
         <div className="leftbox">
           <div className="division division2" onClick={handlescrolleducation}>
             <div className="top">
@@ -100,7 +100,7 @@ function Resume() {
             </div>
           </div>
         </div>
-        <div className="rightbox">
+        <div className="righttbox">
 
           <div className="rightinbox">
            <div id="education">

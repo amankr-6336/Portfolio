@@ -35,8 +35,8 @@
     }
 
 
-    .innerbox{
-         min-width: 1000px;
+    .innnerbox{
+         width: 1000px;
          height: 620px;
         //  border: 2px solid red;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -156,10 +156,11 @@
               }
          }
 
-         .rightbox{
+         .righttbox{
             height: 100%;
             // border: 2px solid green;
-            flex: 3;
+            // flex: 3;
+            width: 50%;
             display: flex;
             justify-content:center;
             align-items: center;
@@ -298,4 +299,116 @@
            
          }
     }
+}
+
+@media screen and (max-width:600px) {
+    .resumebox{
+    .innnerbox{
+      
+       width: 100vw;
+        .leftbox{
+           font-size: 0.5rem;
+            width: 30%;
+            .division{
+                .middle{
+                    font-size: 0.8rem;
+                }
+            }
+            .division:hover{
+                .middle{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+        .righttbox{
+            width: 65%;
+            .rightinbox{
+                width: 100%;
+                width: 90%;
+                max-height: 80%;
+                color: black;
+                // border: 2px solid black;
+                overflow-y: hidden;
+
+                .edu{
+                    .leftside{
+                        gap: 5px;
+
+                        #circle{
+                            font-size: 1rem;
+                        }
+                        h4{
+                            font-size: 1rem;
+                        }
+                    }
+                    .rightside{
+                        h4{
+                            padding: 6px 8px;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+}
+
+@media screen  and (min-width:600px) and (max-width:900px) {
+    .resumebox{
+    .innnerbox{
+      
+       width: 100vw;
+        .leftbox{
+           font-size: 0.5rem;
+            width: 30%;
+            .division{
+                .middle{
+                    font-size: 0.8rem;
+                }
+            }
+            .division:hover{
+                .middle{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+        .righttbox{
+            width: 65%;
+            .rightinbox{
+                width: 100%;
+                width: 90%;
+                max-height: 80%;
+                color: black;
+                // border: 2px solid black;
+                overflow-y: hidden;
+
+                .edu{
+                    .leftside{
+                        gap: 5px;
+
+                        #circle{
+                            font-size: 1rem;
+                        }
+                        h4{
+                            font-size: 1rem;
+                        }
+                    }
+                    .rightside{
+                        h4{
+                            padding: 6px 8px;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}
 }

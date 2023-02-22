@@ -137,3 +137,42 @@
         }
     }
 }
+
+
+@media screen and (max-width:600px) {
+
+ .about{
+
+    
+    .bottom{
+        .innerbox{
+            height: fit-content;
+            flex-direction: column;
+
+            .buttons{
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+
+    .about{
+   
+       
+       .bottom{
+           .innerbox{
+               height: fit-content;
+               flex-direction: column;
+   
+               .buttons{
+                   margin-bottom: 20px;
+               }
+           }
+       }
+   
+   }
+   }
