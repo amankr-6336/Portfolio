@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.scss'
 
 function Navbar() {
+
+    const[menu,setmenu]=useState('false');
+
+    function handlemenu(){
+        setmenu(!menu);
+    }
     
     function handlescroll(){
         window.scrollBy({
@@ -33,7 +39,7 @@ function Navbar() {
     }
   return (
      <nav className='navbar'>
-        <div className="container">
+        <div className="containerr">
             <h1 className='webname'>Aman k</h1>
             
             <div className="content">
@@ -45,11 +51,21 @@ function Navbar() {
                     <li onClick={handlescrollc}>Contact me</li>
                 </ul>
             </div>
-           <div className="hamburger">
-            <span id='one'></span>
-            <span id='two'></span>
-            <span id='three'></span>
+           <div className={menu? "hamburger2":"hamburger"} onClick={handlemenu}>
+            <div id='one'></div>
+            <div id='two'></div>
+            <div id='three'></div>
             </div>
+
+           <div className={menu? "imagine": "imagine2"}>
+                 <ul>
+                    <li >Home</li>
+                    <li onClick={handlescroll}>About</li>
+                    <li onClick={handlescrollr}>Resume</li>
+                    <li onClick={handlescrollp}>Projects</li>
+                    <li onClick={handlescrollc}>Contact me</li>
+                </ul>
+           </div>
         </div>
         
      </nav>
